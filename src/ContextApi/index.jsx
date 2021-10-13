@@ -7,8 +7,7 @@ const GlobalContext = ({children}) => {
 
   return (
     <Context.Provider value={{
-      musicList,
-      setMusicList
+      
     }}>
       {children}
     </Context.Provider>

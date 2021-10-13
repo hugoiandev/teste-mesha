@@ -1,7 +1,101 @@
+@import '../../App.scss';
+
 .home {
   background: #AE1CA1;
   padding: 30px 20px;
   form {
     display: flex;
+  }
+}
+
+.containerModal {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+
+  .modal {
+    background: #AE1CA1;
+    padding: 30px 60px;
+    border-radius: 10px;
+    animation: animaModal .3s forwards linear;
+    @keyframes animaModal {
+      from {
+        opacity: 0;
+      }
+      to {
+        opacity: 1;
+      }
+    }
+
+    .btnQuit {
+      float: right;
+      background: none;
+      cursor: pointer;
+      border: none;
+    }
+
+    h2 {
+      color: white;
+      font-family: $primary-font;
+    }
+
+    .graus {
+      margin-top: 10px;
+      span {
+        font-family: $primary-font;
+        font-size: 1.2rem;
+        color: white;
+      }
+    }
+
+    .lista {
+      margin-top: 10px;
+      ul {
+        margin-top: 10px;
+        li {
+          font-family: $primary-font;
+          font-size: 1.2rem;
+          color: white;
+          list-style: none;
+          margin-bottom: 10px;
+        }
+      }
+    }
+
+    .save {
+      margin-top: 30px;
+      span {
+        font-family: $primary-font;
+        display: block;
+        font-size: 1.2rem;
+        color: yellow;
+      }
+      button {
+        font-family: $primary-font;
+        font-size: 1.2rem;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        padding: 5px 20px;
+        margin-top: 10px;
+        &:disabled {
+          cursor: not-allowed;
+        }
+      }
+    }
+  }
+}
+
+.loading {
+  display: flex;
+  justify-content: center;
+  svg {
+    animation: rotateLoading .8s infinite linear;
+    @keyframes rotateLoading {
+      to {
+        transform: rotate(360deg);
+      }
+    }
   }
 }

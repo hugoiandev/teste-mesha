@@ -5,17 +5,17 @@ import { BrowserRouter as Router,
   Switch
 } from 'react-router-dom'
 import Home from './Pages/Home'
+import Lista from './Pages/Listas'
 import Header from './Components/Header'
 
 const App = () => {
   return (
     <Router>
       <Header />
-      <main className='container'>
-        <Switch>
-          <Route exact path='/' component={Home} />
-        </Switch>
-      </main>
+      <Switch>
+        <Route exact path='/' component={Home} />
+        <Route path='/lista' component={Lista} />
+      </Switch>
     </Router>
   )
 }

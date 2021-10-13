@@ -1,3 +1,5 @@
+@import '../../App.scss';
+
 .header {
   background: #9218B4;
   padding-top: 20px;
@@ -6,5 +8,16 @@
     text-align: center;
     font-family: 'Nunito', Georgia, sans-serif;
     color: white;
+  }
+
+  nav {
+    display: flex;
+    justify-content: center;
+    a {
+      color: yellow;
+      margin-left: 10px;
+      font-family: $primary-font;
+      text-decoration: none;
+    }
   }
 }

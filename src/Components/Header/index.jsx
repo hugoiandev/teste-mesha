@@ -7,7 +7,7 @@ const Header = () => {
 
   return (
     <header className={styles.header}>
-      <h1>Teste Mesha Tecnologia</h1>
+      <h1>Musicas Recomendadas</h1>
       <nav>
         {pathname === '/lista' ? <Link to='/'>Voltar</Link> : null}
         <Link to='/lista'>Ver lista</Link>

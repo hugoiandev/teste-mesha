@@ -34,7 +34,7 @@ const Lista = () => {
                 <span>Temperatura: {item.category}</span>
                 <span>Lista de musicas:</span>
                 <ul>
-                  {item.list.map((item, index) => {
+                  {item.list && item.list.map((item, index) => {
                     return (
                       <li key={index}>{item}</li>
                     )

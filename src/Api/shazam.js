@@ -7,7 +7,7 @@ export const setTerm = (temp) => {
     return 'Pop'
   } else if (temp < 24 && temp > 16) {
     return 'Classica'
-  } else {
+  } if  (temp < 16) {
     return 'Lofi'
   }
 }
